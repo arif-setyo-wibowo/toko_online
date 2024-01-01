@@ -44,60 +44,23 @@ class AuthController extends Controller
                     session(['username' => $user->username]);
                     return redirect()->intended('/');
                 } else {
-                    echo "cok";
-                    // return redirect()->route('login')->withErrors(['password' => 'Password salah'])->withInput();
+                    return redirect()->route('login')->withErrors(['password' => 'Password salah'])->withInput();
                 }
             } else {
-                echo "cok";
-                // return redirect()->route('login')->withErrors(['email' => 'Email tidak ditemukan'])->withInput();
+                return redirect()->route('login')->withErrors(['email' => 'Email tidak ditemukan'])->withInput();
             }
         }else{
             return view('login');
         }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function logout()
     {
-        //
+        session()->forget('login');
+        session()->forget('id');
+        session()->forget('email');
+        session()->forget('username');
+        return redirect()->route('login');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

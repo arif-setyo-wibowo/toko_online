@@ -59,8 +59,12 @@
                 <span class="mr-3 line">|</span>
 
                 <div class="d-flex">
-                    <button class="btn font-weight-bold mr-3">Masuk</button>
-                    <button class="btn font-weight-bold text-white">Daftar</button>
+                    @if (Session::get('login'))
+                    <a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 btn-danger">Logout</a>
+                    @else
+                    <a href="{{ route('login') }}" class="btn font-weight-bold mr-3">Masuk</a>
+                    <a href="{{ route('register') }}" class="btn font-weight-bold text-white">Daftar</a>
+                    @endif
                 </div>
             </div>
             <div class="text-under-search d-flex mt-2">
@@ -149,7 +153,7 @@
                             <h6>Deskripsi</h6>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -980,25 +984,28 @@
             <div class="col-3">
                 <div class="d-flex flex-column">
                     <h4 class="font-weight-bold">Tokopedia</h4>
-                    <h5>Tentang tokopedia</h5>
-                    <h5>Tentang tokopedia</h5>
-                    <h5>Tentang tokopedia</h5>
+                    <a href="" class="text-decoration-none text-dark">Tentang Tokopedia</a>
+                    <a href="" class="text-decoration-none text-dark">Hak Kekayaan Intelektual</a>
+                    <a href="" class="text-decoration-none text-dark">Karir</a>
+                    <a href="" class="text-decoration-none text-dark">Blog</a>
+                    <a href="" class="text-decoration-none text-dark">Mitra Blog</a>
+                    <a href="" class="text-decoration-none text-dark">Bridestory</a>
                 </div>
             </div>
             <div class="col-3">
                 <div class="d-flex flex-column">
                     <h4 class="font-weight-bold">Buy</h4>
-                    <h5>Tentang tokopedia</h5>
-                    <h5>Tentang tokopedia</h5>
-                    <h5>Tentang tokopedia</h5>
+                    <a href="" class="text-decoration-none text-dark">Tagihan & Top Up</a>
+                    <a href="" class="text-decoration-none text-dark">Tukar Tambah Handphone</a>
+                    <a href="" class="text-decoration-none text-dark">Tokopedia COD</a>
                 </div>
             </div>
             <div class="col-3">
                 <div class="d-flex flex-column">
                     <h4 class="font-weight-bold">Help and Support</h4>
-                    <h5>Tentang tokopedia</h5>
-                    <h5>Tentang tokopedia</h5>
-                    <h5>Tentang tokopedia</h5>
+                    <a href="" class="text-decoration-none text-dark">Tokopedia Care</a>
+                    <a href="" class="text-decoration-none text-dark">Syarat dan Ketentuan</a>
+                    <a href="" class="text-decoration-none text-dark">Kebijakan Privasi</a>
                 </div>
             </div>
 
@@ -1051,7 +1058,7 @@
                 </div>
             </div>
         </div>
-    
+
 
 
 
