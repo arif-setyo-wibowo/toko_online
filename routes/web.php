@@ -33,6 +33,9 @@ Route::get('/product', function () {
 Route::get('/shop', function () {
     return view('shop_store');
 })->name('shop');
+Route::get('/regisStore', function () {
+    return view('regis_store');
+})->name('regis');
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.auth');
