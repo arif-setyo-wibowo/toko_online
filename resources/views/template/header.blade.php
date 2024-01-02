@@ -26,6 +26,11 @@
     <script src="https://kit.fontawesome.com/9bcecd6318.js" crossorigin="anonymous"></script>
 </head>
 
+<style>
+    .disable-hover:hover{
+        background-color: #03ac0e;
+    }
+</style>
 <body>
 
     <div id="overlay"></div>
@@ -83,10 +88,10 @@
                     </div>
 
                     <span class="mr-3 line">|</span>
-                        <a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 text-white">Logout</a>
+                    <a href="{{ route('logout') }}" class="btn disable-hover text-white">LogOut</a>
                     @else
-                        <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 mr-3">Masuk</a>
-                        <a href="{{ route('register') }}" class="btn font-weight-bold text-white">Daftar</a>
+                    <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 mr-3">Masuk</a>
+                    <a href="{{ route('register') }}" class="btn font-weight-bold text-white disable-hover">Daftar</a>
                     @endif
                 </div>
             </div>

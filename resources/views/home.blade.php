@@ -15,7 +15,9 @@
             box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
             border: none;
             border-radius: 0;
+
         }
+        
         .carousel-inner {
             padding: 1em;
         }
@@ -321,9 +323,11 @@
             <button class="btn btn-danger p-1" >43</button> <span class="text-danger">:</span>
             <button class="btn btn-danger p-1" >21</button> 
 
+            
+
             <div class="flash-sale">
-                <img class="bg-success" >
-                <div id="carousel1" class="carousel slide " style="top:0; bottom:0;"data-ride="carousel">
+                <div class="row">
+                <div id="carousel1" class="carousel slide col-12" style="top:0; bottom:0;"data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                         <div class="cards-wrapper">
@@ -561,125 +565,6 @@
                             </div>
                         </div>
                         </div>
-                        <div class="carousel-item">
-                        <div class="cards-wrapper">
-                            <div class="card">
-                                <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
-                                <div class="card-body p-2">
-                                    <h6 class="card-title">Kaos Cowo trending</h6>
-                                    <div class="d-flex">
-                                        <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
-                                        <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
-                                    </div>
-                                    <h6 class="mt-1">Rp 40.000</h6>
-                                    <div class="d-flex align-items-center">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <span style="color: #989898;">(14)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card d-none d-md-block">
-                                <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
-                                <div class="card-body p-2">
-                                    <h6 class="card-title">Kaos Cowo trending</h6>
-                                    <div class="d-flex">
-                                        <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
-                                        <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
-                                    </div>
-                                    <h6 class="mt-1">Rp 40.000</h6>
-                                    <div class="d-flex align-items-center">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <span style="color: #989898;">(14)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card d-none d-md-block">
-                                <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
-                                <div class="card-body p-2">
-                                    <h6 class="card-title">Kaos Cowo trending</h6>
-                                    <div class="d-flex">
-                                        <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
-                                        <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
-                                    </div>
-                                    <h6 class="mt-1">Rp 40.000</h6>
-                                    <div class="d-flex align-items-center">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <span style="color: #989898;">(14)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card d-none d-md-block">
-                                <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
-                                <div class="card-body p-2">
-                                    <h6 class="card-title">Kaos Cowo trending</h6>
-                                    <div class="d-flex">
-                                        <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
-                                        <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
-                                    </div>
-                                    <h6 class="mt-1">Rp 40.000</h6>
-                                    <div class="d-flex align-items-center">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <span style="color: #989898;">(14)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card d-none d-md-block">
-                                <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
-                                <div class="card-body p-2">
-                                    <h6 class="card-title">Kaos Cowo trending</h6>
-                                    <div class="d-flex">
-                                        <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
-                                        <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
-                                    </div>
-                                    <h6 class="mt-1">Rp 40.000</h6>
-                                    <div class="d-flex align-items-center">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <span style="color: #989898;">(14)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card d-none d-md-block">
-                                <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
-                                <div class="card-body p-2">
-                                    <h6 class="card-title">Kaos Cowo trending</h6>
-                                    <div class="d-flex">
-                                        <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
-                                        <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
-                                    </div>
-                                    <h6 class="mt-1">Rp 40.000</h6>
-                                    <div class="d-flex align-items-center">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
-                                        <span style="color: #989898;">(14)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -689,6 +574,8 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+                </div>
+                
             </div>
         
 
@@ -806,8 +693,8 @@
         </div>
 
         <div class="row mx-0 mt-5">
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card " style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -827,8 +714,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -848,8 +735,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -869,8 +756,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -890,8 +777,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -911,8 +798,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -934,8 +821,8 @@
             </div>
         </div>
         <div class="row mx-0 mt-2">
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -955,8 +842,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -976,8 +863,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -997,8 +884,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -1018,8 +905,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
@@ -1039,8 +926,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0">
-                <div class="card">
+            <div class="col-2 p-0">
+                <div class="card" style="width:auto;">
                     <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
