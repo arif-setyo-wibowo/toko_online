@@ -29,4 +29,4 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/profil', function () {
     return view('profile');
-});
+})->name('profil');

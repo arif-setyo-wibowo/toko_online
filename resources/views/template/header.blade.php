@@ -16,6 +16,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- end  -->
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/styles/style.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/fontawesome/css/all.css">
     <!-- Sandbox -->
     <link rel="stylesheet" href="{{ asset('assets') }}/sandbox/css/plugins.css">
@@ -74,7 +75,9 @@
                     </div>
 
                     <div class="wrap-img-shop mx-1" onclick="">
-                        <img class="img-shop" src="{{ asset('assets') }}/img/logo/user.png" alt="">
+                        <a href="{{ route('profil') }}">
+                            <img class="img-shop" src="{{ asset('assets') }}/img/logo/user.png" alt="">
+                        </a>
                     </div>
 
                     <span class="mr-3 line">|</span>
@@ -103,141 +106,59 @@
         </div>
     </div>
 
-    <div class="kategory" id="kategory">
-        <div class="head-kategory d-flex w-100">
-            <span>Belanja</span>
-            <span>Featured</span>
-            <span>Featured</span>
-            <span>Brand&nbsp;Unggulan</span>
-            <span>Halal&nbsp;Corner</span>
-            <span>Investasi&nbsp;Asuransi&nbsp;&&nbsp;Pinjaman</span>
-            <span>Pajak</span>
-            <span>Pendidikan</span>
-            <span>Tagihan</span>
-            <span>Top&nbsp;-&nbsp;Up</span>
-            <span>Travel&nbsp;Entertaiment</span>
-            <span>OS&nbsp;Pupuler</span>
-            <span>Lainnya</span>
-        </div>
+    
+    <!-- Profile Page -->
+    <div class="container ">
         <div class="row">
-            <div class="col-2">
-                <div class="head-left">
-                    <h6 class="mb-0">Buku</h6>
-                    <h6 class="mb-0">Elektronik</h6>
-                    <h6 class="mb-0">Dapur</h6>
-                </div>
-            </div>
-            <div class="col-10">
-                <div class="head-left">
-                    <div class="w-100 d-flex align-items-center">
-                        <img src="{{ asset('assets') }}/img/6.png" alt="">
-                        <span class="h4 m-0 p-0 font-weight-bold">Buku</span>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-3">
-                            <h5>Title</h5>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                        </div>
-                        <div class="col-3">
-                            <h5>Title</h5>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                        </div>
-                        <div class="col-3">
-                            <h5>Title</h5>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                        </div>
-                        <div class="col-3">
-                            <h5>Title</h5>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                            <h6>Deskripsi</h6>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+             @yield('content');
         </div>
     </div>
 
     
     @yield('content');
 
-    <div class="row mx-0 mt-5" style="padding: 50px;">
-        <div class="col-3">
-            <div class="d-flex flex-column">
-                <h4 class="font-weight-bold">Tokopedia</h4>
-                <a href="" class="text-decoration-none text-dark">Tentang Tokopedia</a>
-                <a href="" class="text-decoration-none text-dark">Hak Kekayaan Intelektual</a>
-                <a href="" class="text-decoration-none text-dark">Karir</a>
-                <a href="" class="text-decoration-none text-dark">Blog</a>
-                <a href="" class="text-decoration-none text-dark">Mitra Blog</a>
-                <a href="" class="text-decoration-none text-dark">Bridestory</a>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="d-flex flex-column">
-                <h4 class="font-weight-bold">Buy</h4>
-                <a href="" class="text-decoration-none text-dark">Tagihan & Top Up</a>
-                <a href="" class="text-decoration-none text-dark">Tukar Tambah Handphone</a>
-                <a href="" class="text-decoration-none text-dark">Tokopedia COD</a>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="d-flex flex-column">
-                <h4 class="font-weight-bold">Help and Support</h4>
-                <a href="" class="text-decoration-none text-dark">Tokopedia Care</a>
-                <a href="" class="text-decoration-none text-dark">Syarat dan Ketentuan</a>
-                <a href="" class="text-decoration-none text-dark">Kebijakan Privasi</a>
-            </div>
-        </div>
-
-        <div class="col-3">
-            <div class="d-flex flex-column align-items-center">
-                <img src="{{ asset('assets/') }}/img/footer/footer_img.png" width="400" alt="">
-                <div class="d-flex mt-3">
-                    <img width="150" class="mr-3" src="{{ asset('assets') }}/img/22.png" alt="">
-                    <img width="150" src="{{ asset('assets') }}/img/23.png" alt="">
+        <div class="row mx-0 mt-5" style="padding: 50px;">
+            <div class="col-3">
+                <div class="d-flex flex-column">
+                    <h4 class="font-weight-bold">Tokopedia</h4>
+                    <a href="" class="text-decoration-none text-dark">Tentang Tokopedia</a>
+                    <a href="" class="text-decoration-none text-dark">Hak Kekayaan Intelektual</a>
+                    <a href="" class="text-decoration-none text-dark">Karir</a>
+                    <a href="" class="text-decoration-none text-dark">Blog</a>
+                    <a href="" class="text-decoration-none text-dark">Mitra Blog</a>
+                    <a href="" class="text-decoration-none text-dark">Bridestory</a>
                 </div>
-                <span class="text-success">Blesing and Outcoming Challenges Through Courage, Hardwork, and Resistence</span>
+            </div>
+            <div class="col-3">
+                <div class="d-flex flex-column">
+                    <h4 class="font-weight-bold">Buy</h4>
+                    <a href="" class="text-decoration-none text-dark">Tagihan & Top Up</a>
+                    <a href="" class="text-decoration-none text-dark">Tukar Tambah Handphone</a>
+                    <a href="" class="text-decoration-none text-dark">Tokopedia COD</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="d-flex flex-column">
+                    <h4 class="font-weight-bold">Help and Support</h4>
+                    <a href="" class="text-decoration-none text-dark">Tokopedia Care</a>
+                    <a href="" class="text-decoration-none text-dark">Syarat dan Ketentuan</a>
+                    <a href="" class="text-decoration-none text-dark">Kebijakan Privasi</a>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="{{ asset('assets/') }}/img/footer/footer_img.png" width="400" alt="">
+                    <div class="d-flex mt-3">
+                        <img width="150" class="mr-3" src="{{ asset('assets') }}/img/22.png" alt="">
+                        <img width="150" src="{{ asset('assets') }}/img/23.png" alt="">
+                    </div>
+                    <span class="text-success">Blesing and Outcoming Challenges Through Courage, Hardwork, and Resistence</span>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- Modal pencarian -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
