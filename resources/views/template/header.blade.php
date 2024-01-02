@@ -11,7 +11,8 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- bootstrap 3 and affix -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- end  -->
@@ -57,16 +58,16 @@
                     </div>
                 </div>
 
-              
 
-                
+
+
 
                 <div class="d-flex">
                     @if (Session::get('login'))
                     <div class="wrap-img-shop mx-1" onclick="on()">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
-                    
+
                     <div class="wrap-img-shop mx-1" onclick="">
                         <i class="fa-regular fa-comment-dots"></i>
                     </div>
@@ -81,10 +82,10 @@
                     </div>
 
                     <span class="mr-3 line">|</span>
-                        <a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 btn-danger">Logout</a>
+                    <a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 btn-danger">Logout</a>
                     @else
-                        <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 mr-3">Masuk</a>
-                        <a href="{{ route('register') }}" class="btn font-weight-bold text-white">Daftar</a>
+                    <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 mr-3">Masuk</a>
+                    <a href="{{ route('register') }}" class="btn font-weight-bold text-white">Daftar</a>
                     @endif
                 </div>
             </div>
@@ -102,88 +103,106 @@
             <h4 class="mt-2">Wah keranjang belanjaanmu kosong</h4>
             <p class="text-center">Daripada dianggurin, mending diisi dengan barang barang </br>impianmu. Yuk cek
                 sekarang!</p>
-            <button class="btn">Lihat Rekomendasi</button>
+            <a href="{{ route('cart') }}"><button class="btn">Lihat Rekomendasi</button></a>
         </div>
     </div>
 
     <!-- content -->
-    @yield('content');
+    @yield('content')
+    
+    <hr style="border-width: 3px;">
+    <div class="row mx-0 mt-5" style="padding: 50px;">
+        <div class="col-3">
+            <div class="d-flex flex-column">
+                <h4 class="font-weight-bold">Tokopedia</h4>
+                <a href="" class="text-decoration-none text-dark">Tentang Tokopedia</a>
+                <a href="" class="text-decoration-none text-dark">Hak Kekayaan Intelektual</a>
+                <a href="" class="text-decoration-none text-dark">Karir</a>
+                <a href="" class="text-decoration-none text-dark">Blog</a>
+                <a href="" class="text-decoration-none text-dark">Mitra Blog</a>
+                <a href="" class="text-decoration-none text-dark">Bridestory</a>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="d-flex flex-column">
+                <h4 class="font-weight-bold">Buy</h4>
+                <a href="" class="text-decoration-none text-dark">Tagihan & Top Up</a>
+                <a href="" class="text-decoration-none text-dark">Tukar Tambah Handphone</a>
+                <a href="" class="text-decoration-none text-dark">Tokopedia COD</a>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="d-flex flex-column">
+                <h4 class="font-weight-bold">Help and Support</h4>
+                <a href="" class="text-decoration-none text-dark">Tokopedia Care</a>
+                <a href="" class="text-decoration-none text-dark">Syarat dan Ketentuan</a>
+                <a href="" class="text-decoration-none text-dark">Kebijakan Privasi</a>
+            </div>
+        </div>
 
-        <div class="row mx-0 mt-5" style="padding: 50px;">
-            <div class="col-3">
-                <div class="d-flex flex-column">
-                    <h4 class="font-weight-bold">Tokopedia</h4>
-                    <a href="" class="text-decoration-none text-dark">Tentang Tokopedia</a>
-                    <a href="" class="text-decoration-none text-dark">Hak Kekayaan Intelektual</a>
-                    <a href="" class="text-decoration-none text-dark">Karir</a>
-                    <a href="" class="text-decoration-none text-dark">Blog</a>
-                    <a href="" class="text-decoration-none text-dark">Mitra Blog</a>
-                    <a href="" class="text-decoration-none text-dark">Bridestory</a>
+        <div class="col-3">
+            <div class="d-flex flex-column align-items-center">
+                <img src="{{ asset('assets/') }}/img/footer/footer_img.png" width="400" alt="">
+                <div class="d-flex mt-3">
+                    <img width="150" class="mr-3" src="{{ asset('assets') }}/img/22.png" alt="">
+                    <img width="150" src="{{ asset('assets') }}/img/23.png" alt="">
                 </div>
-            </div>
-            <div class="col-3">
-                <div class="d-flex flex-column">
-                    <h4 class="font-weight-bold">Buy</h4>
-                    <a href="" class="text-decoration-none text-dark">Tagihan & Top Up</a>
-                    <a href="" class="text-decoration-none text-dark">Tukar Tambah Handphone</a>
-                    <a href="" class="text-decoration-none text-dark">Tokopedia COD</a>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="d-flex flex-column">
-                    <h4 class="font-weight-bold">Help and Support</h4>
-                    <a href="" class="text-decoration-none text-dark">Tokopedia Care</a>
-                    <a href="" class="text-decoration-none text-dark">Syarat dan Ketentuan</a>
-                    <a href="" class="text-decoration-none text-dark">Kebijakan Privasi</a>
-                </div>
-            </div>
-
-            <div class="col-3">
-                <div class="d-flex flex-column align-items-center">
-                    <img src="{{ asset('assets/') }}/img/footer/footer_img.png" width="400" alt="">
-                    <div class="d-flex mt-3">
-                        <img width="150" class="mr-3" src="{{ asset('assets') }}/img/22.png" alt="">
-                        <img width="150" src="{{ asset('assets') }}/img/23.png" alt="">
-                    </div>
-                    <span class="text-success">Blesing and Outcoming Challenges Through Courage, Hardwork, and Resistence</span>
-                </div>
+                <span class="text-success">Blesing and Outcoming Challenges Through Courage, Hardwork, and
+                    Resistence</span>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Modal pencarian -->
-<div class="modal fade mt-15 item-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content m-c-head">
-            <div class="d-flex justify-content-between">
-                <span class="font-weight-bold title">Pencarian Terakhir</span>
-                <span class="font-weight-bold" style="color: #d50000;">Hapus Semua</span>
-            </div>
-            <span class="ml-2 mt-2" style="font-size: 14px;">Jersey sepeda</span>
-            <span class="ml-2 mt-2" style="font-size: 14px;">Lampu Emergency</span>
-            <span class="ml-2 mt-2" style="font-size: 14px;">Lampu Emergency</span>
-            <span class="font-weight-bold mt-2 mb-2 title">Populer</span>
-            <div class="d-flex flex-wrap">
-                <button class="btn mr-2">text button</button>
-                <button class="btn mr-2">text button</button>
-                <button class="btn mr-2">text button</button>
-            </div>
-        </div>
+    </div>
     </div>
 
-    <script src="{{ asset('assets/') }}/js/index.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <!-- Modal pencarian -->
+    <div class="mt-15 modal fade  item-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content m-c-head">
+                <div class="d-flex justify-content-between">
+                    <span class="font-weight-bold title">Pencarian Terakhir</span>
+                    <span class="font-weight-bold" style="color: #d50000;">Hapus Semua</span>
+                </div>
+                <span class="ml-2 mt-2" style="font-size: 14px;">Jersey sepeda</span>
+                <span class="ml-2 mt-2" style="font-size: 14px;">Lampu Emergency</span>
+                <span class="ml-2 mt-2" style="font-size: 14px;">Lampu Emergency</span>
+                <span class="font-weight-bold mt-2 mb-2 title">Populer</span>
+                <div class="d-flex flex-wrap">
+                    <button class="btn mr-2">text button</button>
+                    <button class="btn mr-2">text button</button>
+                    <button class="btn mr-2">text button</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="{{ asset('assets/') }}/js/index.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <script src="{{ asset('assets') }}/sandbox/js/plugins.js"></script>
+        <script src="{{ asset('assets') }}/sandbox/js/theme.js"></script>
+        <script src="{{ asset('assets/') }}/js/index.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
 </body>
 
 </html>

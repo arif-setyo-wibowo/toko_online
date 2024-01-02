@@ -19,7 +19,13 @@ Route::get('/', function () {
 });
 Route::get('/detail', function () {
     return view('detail_produk');
-});
+})->name('detail');
+Route::get('/cart', function () {
+    return view('cart');
+})->name('cart');
+Route::get('/checkout', function () {
+    return view('checkout');
+})->name('checkout');
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.auth');

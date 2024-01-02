@@ -405,8 +405,8 @@
         <div class="row mx-0 mt-5">
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -426,8 +426,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -447,8 +447,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -468,8 +468,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -489,8 +489,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -510,8 +510,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -533,8 +533,8 @@
         <div class="row mx-0 mt-2">
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -554,8 +554,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -575,8 +575,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -596,8 +596,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -617,8 +617,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
@@ -638,8 +638,8 @@
             </div>
             <div class="col-2 pl-0">
                 <div class="card">
-                    <img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <a href="{{ route('detail') }}"><img src="{{ asset('assets/') }}/img/produk/12.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body p-2">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
                             <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
