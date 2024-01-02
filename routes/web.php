@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,10 @@ Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/register', [AuthController::class, 'register'])->name('register.signup');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/profil', function () {
-    return view('profile');
-})->name('profil');
+
+Route::get('/profil', [ProfilController::class, 'index'])->name('profil');
+Route::post('/profil/update-name', [ProfilController::class, 'updateName'])->name('update-profile-name');
+Route::post('/profil/update-dob', [ProfilController::class, 'updateBirth'])->name('update-profile-dob');
+Route::post('/profil/update-gender', [ProfilController::class, 'updateGender'])->name('update-profile-gender');
+Route::post('/profil/update-email', [ProfilController::class, 'updateEmail'])->name('update-profile-email');
+Route::post('/profil/update-phone', [ProfilController::class, 'updatePhone'])->name('update-profile-phone');
