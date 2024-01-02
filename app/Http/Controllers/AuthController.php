@@ -21,7 +21,7 @@ class AuthController extends Controller
             User::create([
                 'email'     => $request->email,
                 'password'  => bcrypt($request->password),
-                'username'  => strtolower(str_replace(' ', '', $request->username)),
+                'username'  => $request->username,
             ]);
 
             return redirect()->route('login')->with('success', 'Registration successful!');
