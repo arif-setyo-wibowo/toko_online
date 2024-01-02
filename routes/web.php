@@ -50,3 +50,11 @@ Route::post('/profil/update-dob', [ProfilController::class, 'updateBirth'])->nam
 Route::post('/profil/update-gender', [ProfilController::class, 'updateGender'])->name('update-profile-gender');
 Route::post('/profil/update-email', [ProfilController::class, 'updateEmail'])->name('update-profile-email');
 Route::post('/profil/update-phone', [ProfilController::class, 'updatePhone'])->name('update-profile-phone');
+
+Route::post('/profil/update-photo', [ProfilController::class, 'updatePhoto'])->name('update-profile-photo');
+
+Route::post('/profil/tambah-rekening', [ProfilController::class, 'insertRekening'])->name('insert-rekening');
+Route::get('profil/rekening-delete/{id}', [ProfilController::class, 'deleteRekening'])->name('rekening.delete');
+
+Route::post('/profil/tambah-alamat', [ProfilController::class, 'insertAlamat'])->name('insert-alamat');
+Route::post('/profil/update-alamat', [ProfilController::class, 'updateAlamat'])->name('update-alamat');
