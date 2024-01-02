@@ -18,11 +18,11 @@
 			<span>Download tokoNJedia App</span>
 		</div>
 		<div class="d-flex">
-			<span class="mr-4">Tentang tokoNJedia</span>
-			<span class="mr-4">Mitra tokoNJedia</span>
-			<span class="mr-4">Mulai Berjualan</span>
-			<span class="mr-4">Promo</span>
-			<span class="mr-4">tokoNJedia Care</span>
+			<span style="margin-right:1.5rem;">Tentang tokoNJedia</span>
+			<span style="margin-right:1.5rem;">Mitra tokoNJedia</span>
+			<span style="margin-right:1.5rem;">Mulai Berjualan</span>
+			<span style="margin-right:1.5rem;">Promo</span>
+			<span style="margin-right:1.5rem;">tokoNJedia Care</span>
 		</div>
 	</div>
 	<div class="item-header-2 d-flex flex-column">
@@ -38,31 +38,31 @@
 			</div>
 			<div class="d-flex">
 				 @if (Session::get('login'))
-				<div class="wrap-img-shop mx-1" onclick="on()">
+				<div class="wrap-img-shop" style="margin:0.25rem" onclick="on()">
 					<i class="fa-solid fa-cart-shopping"></i>
 				</div>
-				<div class="wrap-img-shop mx-1" onclick="">
+				<div class="wrap-img-shop " style="margin:0.25rem" onclick="">
 					<i class="fa-regular fa-comment-dots"></i>
 				</div>
-				<div class="wrap-img-shop mx-1" onclick="">
+				<div class="wrap-img-shop " style="margin:0.25rem" onclick="">
 					<img class="img-shop" src="{{ asset('assets') }}/img/logo/ic-toped.jpg" alt="">
 				</div>
-				<div class="wrap-img-shop mx-1" onclick="">
+				<div class="wrap-img-shop " style="margin:0.25rem" onclick="">
 					<a href="{{ route('profil') }}"><img class="img-shop" src="{{ asset('assets') }}/img/logo/user.png" alt=""></a>
 				</div>
-				<span class="mr-3 line">|</span>
-				<a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 text-white">Logout</a>
-				@else <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 mr-3">Masuk</a>
+				<span class=" line" style="margin-right:3px;">|</span>
+				<a href="{{ route('logout') }}" class="btn font-weight-bold  text-white" style="margin-right:3px;">Logout</a>
+				@else <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 "style="margin-right:3px;">Masuk</a>
 				<a href="{{ route('register') }}" class="btn font-weight-bold text-white">Daftar</a>
 				@endif
 			</div>
 		</div>
 		<div class="text-under-search d-flex mt-2">
-			<span style="margin-right:5px;">Jersey Sepeda</span>
-			<span style="margin-right:5px;">Jersey Sepeda</span>
-			<span style="margin-right:5px;">Jersey Sepeda</span>
-			<span style="margin-right:5px;">Jersey Sepeda</span>
-			<span style="margin-right:5px;">Jersey Sepeda</span>
+			<span style="margin-right:1rem;">Jersey Sepeda</span>
+			<span style="margin-right:1rem;">Jersey Sepeda</span>
+			<span style="margin-right:1rem;">Jersey Sepeda</span>
+			<span style="margin-right:1rem;">Jersey Sepeda</span>
+			<span style="margin-right:1rem;">Jersey Sepeda</span>
 		</div>
 	</div>
 	<div class="menu-bar flex-column justify-content-between align-items-center" id="menuBar">
