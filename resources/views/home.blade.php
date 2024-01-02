@@ -827,22 +827,7 @@
 
 
     <div class="kategory-foot2">
-        <div class="row mx-0">
-            <div class="d-flex justify-content-between align-items-center w-100">
-                <div>
-                    <h4 class="font-weight-bold" style="color: #ff8b00;">Punya Toko Online? Buka cabangnya di Tokopedia
-                    </h4>
-                    <h5 class="mt-5 font-weight-normal">Mudah, nyaman dan bebas komisi transaksi. <span class="font-weight-bold">GRATIS!</span> </h5>
-                    <div class="d-flex align-items-center">
-                        <button class="btn mr-4 text-white" style="background-color: #03ac0e;">Buka Toko GRATIS</button>
-                        <a href="" style="color: #03ac0e;">Pelajari lebih lanjut</a>
-                    </div>
-                </div>
-                <img src="{{ asset('assets') }}/img/17.png" alt="">
-            </div>
-
-
-        </div>
+        
 
 
     </div>

@@ -106,15 +106,7 @@
         </div>
     </div>
 
-    
-    <!-- Profile Page -->
-    <div class="container ">
-        <div class="row">
-             @yield('content');
-        </div>
-    </div>
-
-    
+    <!-- content -->
     @yield('content');
 
         <div class="row mx-0 mt-5" style="padding: 50px;">
@@ -161,7 +153,7 @@
 </div>
 
 <!-- Modal pencarian -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade mt-15 item-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content m-c-head">
             <div class="d-flex justify-content-between">
