@@ -107,7 +107,7 @@
 
         <div class="container">
         <!-- caraousel -->
-            <div id="carouselExampleIndicators" class="carousel slide d-flex flex-column align-items-center"
+            <div id="carouselExampleIndicators" class="carousel slide d-flex flex-column align-items-center mt-5"
                 data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
