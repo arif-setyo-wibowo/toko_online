@@ -14,8 +14,8 @@
     </section>
     <section class="wrapper  mt-15 container px-5 ">
         <div class=" d-flex gap-3 py-3 py-md-5">
-            <a class="fw-bold text-success border-bottom " href="">Product</a>
-            <a class="fw-bold text-muted" href="">Shop</a>
+            <!-- <a class="fw-bold text-success border-bottom " href="">Product</a>
+            <a class="fw-bold text-muted" href="">Shop</a> -->
         </div>
     </section>
 
@@ -39,7 +39,7 @@
         </div>
         <!-- /.container -->
     </section>
-    
+
     <!-- Produck -->
     <section class="mb-10">
         <h6>Menampilkan 4+ produk untuk "indomie goreng"</h6>
