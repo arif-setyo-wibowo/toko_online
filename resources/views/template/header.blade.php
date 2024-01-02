@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- bootstrap 3 and affix -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- end  -->
@@ -27,10 +25,27 @@
 </head>
 
 <style>
-    .disable-hover:hover{
+    .disable-hover:hover {
         background-color: #03ac0e;
     }
+
+    @font-face {
+        font-family: 'Bauhaus';
+        src: url('{{ asset("assets") }}/fonts/BauhausRegular.ttf') format('truetype');
+    }
+
+    .custom-font {
+        font-family: 'Bauhaus', sans-serif;
+        color: #03ac0e;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .active-link {
+        color: green;
+    }
 </style>
+
 <body>
 
     <div id="overlay"></div>
@@ -39,7 +54,7 @@
         <div class="item-header-1 d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
                 <img class="mr-2" src="{{ asset('assets') }}/img/1.png" alt="">
-                <span>Download tokoNJedia App</span>
+                <span style="font-family: 'mandala', sans-serif;">Download tokoNJedia App</span>
             </div>
 
             <div class="d-flex">
@@ -53,21 +68,16 @@
 
         <div class="item-header-2 d-flex flex-column">
             <div class="d-flex justify-content-between align-items-center">
-                <a href="/"><img class="img-tokopedia" src="{{ asset('assets') }}/img/logo/2.png" alt=""></a>
-                
+                <a href="{{ route('home') }}">
+                    <h1 class="custom-font">tokoNJedia</h1>
+                </a>
                 <span class="mx-2 text-kategory" onclick="kategoryOn()">Kategory</span>
                 <div class="wrap-search">
-                    <input type="text" class="form-control" placeholder="Cari barang" data-toggle="modal"
-                        data-target="#exampleModal">
+                    <input type="text" class="form-control" placeholder="Cari barang" data-toggle="modal" data-target="#exampleModal">
                     <div class=" wrap-icon-search">
                         <img class="img-search" src="{{ asset('assets') }}/img/3.png" alt="">
                     </div>
                 </div>
-
-
-
-
-
                 <div class="d-flex">
                     @if (Session::get('login'))
                     <div class="wrap-img-shop mx-1" onclick="on()">
@@ -96,11 +106,12 @@
                 </div>
             </div>
             <div class="text-under-search d-flex mt-2">
-                <span class="mr-3">Jersey Sepeda</span>
-                <span class="mr-3">Jersey Sepeda</span>
-                <span class="mr-3">Jersey Sepeda</span>
-                <span class="mr-3">Jersey Sepeda</span>
-                <span class="mr-3">Jersey Sepeda</span>
+                <a href="{{ route('product') }}" class="{{ request()->is('product') ? 'active-link' : '' }}">
+                    <span class="mr-3 fs-18 fw-semibold"><i class="fa-solid fa-box"></i> Product</span>
+                </a>
+                <a href="{{ route('shop') }}" class="{{ request()->is('shop') ? 'active-link' : '' }}">
+                    <span class="mr-3 fs-18 fw-semibold"><i class="fa-solid fa-store"></i> Shop</span>
+                </a>
             </div>
         </div>
 
@@ -115,7 +126,7 @@
 
     <!-- content -->
     @yield('content')
-    
+
     <hr style="border-width: 3px;">
     <div class="row mx-0 mt-5" style="padding: 50px;">
         <div class="col-3">
@@ -162,8 +173,7 @@
     </div>
 
     <!-- Modal pencarian -->
-    <div class="mt-15 modal fade  item-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="mt-15 modal fade  item-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content m-c-head">
                 <div class="d-flex justify-content-between">
@@ -185,29 +195,17 @@
         <script src="{{ asset('assets/') }}/js/index.js"></script>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="{{ asset('assets') }}/sandbox/js/plugins.js"></script>
         <script src="{{ asset('assets') }}/sandbox/js/theme.js"></script>
         <script src="{{ asset('assets/') }}/js/index.js"></script>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 

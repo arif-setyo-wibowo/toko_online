@@ -14,8 +14,8 @@
     </section>
     <section class="wrapper  mt-15 container px-5 ">
         <div class=" d-flex gap-3 py-3 py-md-5">
-            <a class="fw-bold text-muted " href="">Product</a>
-            <a class="fw-bold  text-success border-bottom" href="">Shop</a>
+            <!-- <a class="fw-bold text-muted " href="">Product</a> -->
+            <!-- <a class="fw-bold  text-success border-bottom" href="">Shop</a> -->
         </div>
     </section>
 

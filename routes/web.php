@@ -17,7 +17,7 @@ use App\Http\Controllers\ProfilController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 Route::get('/detail', function () {
     return view('detail_produk');
 })->name('detail');
