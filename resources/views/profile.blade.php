@@ -9,6 +9,32 @@
 <link rel="stylesheet" href="{{ asset('assets') }}/styles/style.css"/>
 <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
 </head>
+
+<style>
+    .disable-hover:hover {
+        background-color: #03ac0e;
+    }
+
+    @font-face {
+        font-family: 'Bauhaus';
+        src: url('{{ asset("assets") }}/fonts/BauhausRegular.ttf') format('truetype');
+    }
+
+    .custom-font {
+        font-family: 'Bauhaus', sans-serif;
+        color: #03ac0e;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .active-link {
+        color: green;
+    }
+	a{
+		text-decoration: none;
+	}
+</style>
+
 <body>
 <!-- Navbar -->
 <div id="overlay"></div>
@@ -28,8 +54,9 @@
 	</div>
 	<div class="item-header-2 d-flex flex-column">
 		<div class="d-flex justify-content-between align-items-center">
-            <a href="/"><img class="img-tokopedia" src="{{ asset('assets') }}/img/logo/2.png" alt=""></a>
-
+            <a href="{{ route('home') }}">
+				<h1 class="custom-font">tokoNJedia</h1>
+			</a>
 			<span class="mx-2 text-kategory" onclick="kategoryOn()">Kategory</span>
 			<div class="wrap-search">
 				<input type="text" class="form-control" placeholder="Cari barang" data-toggle="modal" data-target="#exampleModal">
@@ -58,12 +85,13 @@
 				@endif
 			</div>
 		</div>
-		<div class="text-under-search d-flex mt-2">
-			<span style="margin-right:1rem;">Jersey Sepeda</span>
-			<span style="margin-right:1rem;">Jersey Sepeda</span>
-			<span style="margin-right:1rem;">Jersey Sepeda</span>
-			<span style="margin-right:1rem;">Jersey Sepeda</span>
-			<span style="margin-right:1rem;">Jersey Sepeda</span>
+		<div class="text-under-search d-flex" style="margin-top:0.75rem">
+			<a href="{{ route('product') }}" style="margin-right:1.25rem" class="{{ request()->is('product') ? 'active-link' : '' }}">
+				<span class=" fw-semibold"><i class="fa-solid fa-box"></i> Product</span>
+			</a>
+			<a href="{{ route('shop') }}" style="margin-right:1.25rem" class="{{ request()->is('shop') ? 'active-link' : '' }}">
+				<span class="fw-semibold"><i class="fa-solid fa-store"></i> Shop</span>
+			</a>
 		</div>
 	</div>
 	<div class="menu-bar flex-column justify-content-between align-items-center" id="menuBar">
@@ -73,6 +101,11 @@
 			Daripada dianggurin, mending diisi dengan barang barang </br>impianmu. Yuk cek sekarang!
 		</p>
 		<button class="btn">Lihat Rekomendasi</button>
+	</div>
+
+	<div class="menu-bar flex-column justify-content-between align-items-center" id="regisBar">
+		<h4 class="mt-2">Kamu belum memiliki Toko</h4>
+		<a href="{{ route('regis') }}"><button class="btn">Buka Toko</button></a>
 	</div>
 </div>
 <!-- Profile Page -->
@@ -84,7 +117,7 @@
 					<div class="container">
 						<div class="row d-flex flex-row">
 							<div class="col-lg-3 align-items-center">
-								<img src="{{ asset('assets') }}/img/default.jpg" alt="" width="60px" height="60px" class="img-fluid" style="border-radius: 50%"/>
+								<img src="{{ asset('storage/' . $profil['image']) }}" alt=""  class="img-fluid" style="border-radius: 50%; width:50px; height:50px"/>
 							</div>
 							<div class="col-lg">
 								<span class="fw-bold">{{ $profil['username'] }}</span>

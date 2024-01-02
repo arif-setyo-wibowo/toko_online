@@ -107,10 +107,10 @@
             </div>
             <div class="text-under-search d-flex mt-2">
                 <a href="{{ route('product') }}" class="{{ request()->is('product') ? 'active-link' : '' }}">
-                    <span class="mr-3 fs-18 fw-semibold"><i class="fa-solid fa-box"></i> Product</span>
+                    <span class="mr-3 fw-semibold"><i class="fa-solid fa-box"></i> Product</span>
                 </a>
                 <a href="{{ route('shop') }}" class="{{ request()->is('shop') ? 'active-link' : '' }}">
-                    <span class="mr-3 fs-18 fw-semibold"><i class="fa-solid fa-store"></i> Shop</span>
+                    <span class="mr-3 fw-semibold"><i class="fa-solid fa-store"></i> Shop</span>
                 </a>
             </div>
         </div>
