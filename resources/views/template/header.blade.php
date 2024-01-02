@@ -82,7 +82,7 @@
                     </div>
 
                     <span class="mr-3 line">|</span>
-                    <a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 btn-danger">Logout</a>
+                    <a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 text-white">Logout</a>
                     @else
                     <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 mr-3">Masuk</a>
                     <a href="{{ route('register') }}" class="btn font-weight-bold text-white">Daftar</a>
