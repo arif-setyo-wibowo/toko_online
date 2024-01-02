@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tokopedia Clone</title>
+<title>tokoNJedia</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
 <link rel="stylesheet" href="{{ asset('assets') }}/styles/style.css"/>
 <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
@@ -15,19 +15,20 @@
 	<div class="item-header-1 d-flex justify-content-between align-items-center">
 		<div class="d-flex align-items-center">
 			<img class="mr-2" src="{{ asset('assets') }}/img/1.png" alt="">
-			<span>Download Tokopedia App</span>
+			<span>Download tokoNJedia App</span>
 		</div>
 		<div class="d-flex">
-			<span class="mr-4">Tentang Tokopedia</span>
-			<span class="mr-4">Mitra Tokopedia</span>
+			<span class="mr-4">Tentang tokoNJedia</span>
+			<span class="mr-4">Mitra tokoNJedia</span>
 			<span class="mr-4">Mulai Berjualan</span>
 			<span class="mr-4">Promo</span>
-			<span class="mr-4">Tokopedia Care</span>
+			<span class="mr-4">tokoNJedia Care</span>
 		</div>
 	</div>
 	<div class="item-header-2 d-flex flex-column">
 		<div class="d-flex justify-content-between align-items-center">
-			<img class="img-tokopedia" src="{{ asset('assets') }}/img/logo/2.png" alt="">
+            <a href="/"><img class="img-tokopedia" src="{{ asset('assets') }}/img/logo/2.png" alt=""></a>
+			
 			<span class="mx-2 text-kategory" onclick="kategoryOn()">Kategory</span>
 			<div class="wrap-search">
 				<input type="text" class="form-control" placeholder="Cari barang" data-toggle="modal" data-target="#exampleModal">
@@ -50,18 +51,18 @@
 					<a href="{{ route('profil') }}"><img class="img-shop" src="{{ asset('assets') }}/img/logo/user.png" alt=""></a>
 				</div>
 				<span class="mr-3 line">|</span>
-				<a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 btn-danger">Logout</a>
+				<a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 text-white">Logout</a>
 				@else <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 mr-3">Masuk</a>
 				<a href="{{ route('register') }}" class="btn font-weight-bold text-white">Daftar</a>
 				@endif
 			</div>
 		</div>
 		<div class="text-under-search d-flex mt-2">
-			<span class="mr-3">Jersey Sepeda</span>
-			<span class="mr-3">Jersey Sepeda</span>
-			<span class="mr-3">Jersey Sepeda</span>
-			<span class="mr-3">Jersey Sepeda</span>
-			<span class="mr-3">Jersey Sepeda</span>
+			<span style="margin-right:5px;">Jersey Sepeda</span>
+			<span style="margin-right:5px;">Jersey Sepeda</span>
+			<span style="margin-right:5px;">Jersey Sepeda</span>
+			<span style="margin-right:5px;">Jersey Sepeda</span>
+			<span style="margin-right:5px;">Jersey Sepeda</span>
 		</div>
 	</div>
 	<div class="menu-bar flex-column justify-content-between align-items-center" id="menuBar">
@@ -85,8 +86,8 @@
 								<img src="{{ asset('assets') }}/img/default.jpg" alt="" width="60px" height="60px" class="img-fluid" style="border-radius: 50%"/>
 							</div>
 							<div class="col-lg">
-								<span class="fw-bold">Yasya Indra Shop</span>
-								<p class="fw-light text-secondary">0812343434</p>
+								<span class="fw-bold">{{ $profil['username'] }}</span>
+								<p class="fw-light text-secondary">{{ $profil['phone'] }}</p>
 							</div>
 						</div>
 						<div class="row mt-4 justify-content-between">
@@ -500,8 +501,8 @@
 <div class="row d-flex justify-content-between mt-5">
 	<div class="col-lg-3 mb-3">
 		<div class="mb-3">
-			<h5 class="fw-bold">Tokopedia</h5>
-			<li>Tentang Tokopedia</li>
+			<h5 class="fw-bold">tokoNJedia</h5>
+			<li>Tentang tokoNJedia</li>
 			<li>Karir</li>
 			<li>Blog</li>
 		</div>
@@ -515,7 +516,7 @@
 	<div class="col-lg-3 mb-3">
 		<div class="mb-3">
 			<h5 class="fw-bold">Bantuan dan Panduan</h5>
-			<li>Tokopedia Care</li>
+			<li>tokoNJedia Care</li>
 			<li>Syarat dan Ketentuan</li>
 		</div>
 	</div>

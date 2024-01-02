@@ -22,7 +22,7 @@
     <!-- Sandbox -->
     <link rel="stylesheet" href="{{ asset('assets') }}/sandbox/css/plugins.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/sandbox/css/style.css">
-    <title>TokoPedia</title>
+    <title>tokoNJedia</title>
     <script src="https://kit.fontawesome.com/9bcecd6318.js" crossorigin="anonymous"></script>
 </head>
 
@@ -34,21 +34,22 @@
         <div class="item-header-1 d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
                 <img class="mr-2" src="{{ asset('assets') }}/img/1.png" alt="">
-                <span>Download Tokopedia App</span>
+                <span>Download tokoNJedia App</span>
             </div>
 
             <div class="d-flex">
-                <span class="mr-4">Tentang Tokopedia</span>
-                <span class="mr-4">Mitra Tokopedia</span>
+                <span class="mr-4">Tentang tokoNJedia</span>
+                <span class="mr-4">Mitra tokoNJedia</span>
                 <span class="mr-4">Mulai Berjualan</span>
                 <span class="mr-4">Promo</span>
-                <span class="mr-4">Tokopedia Care</span>
+                <span class="mr-4">tokoNJedia Care</span>
             </div>
         </div>
 
         <div class="item-header-2 d-flex flex-column">
             <div class="d-flex justify-content-between align-items-center">
-                <img class="img-tokopedia" src="{{ asset('assets') }}/img/logo/2.png" alt="">
+                <a href="/"><img class="img-tokopedia" src="{{ asset('assets') }}/img/logo/2.png" alt=""></a>
+                
                 <span class="mx-2 text-kategory" onclick="kategoryOn()">Kategory</span>
                 <div class="wrap-search">
                     <input type="text" class="form-control" placeholder="Cari barang" data-toggle="modal"
@@ -114,8 +115,8 @@
     <div class="row mx-0 mt-5" style="padding: 50px;">
         <div class="col-3">
             <div class="d-flex flex-column">
-                <h4 class="font-weight-bold">Tokopedia</h4>
-                <a href="" class="text-decoration-none text-dark">Tentang Tokopedia</a>
+                <h4 class="font-weight-bold">tokoNJedia</h4>
+                <a href="" class="text-decoration-none text-dark">Tentang tokoNJedia</a>
                 <a href="" class="text-decoration-none text-dark">Hak Kekayaan Intelektual</a>
                 <a href="" class="text-decoration-none text-dark">Karir</a>
                 <a href="" class="text-decoration-none text-dark">Blog</a>
@@ -128,13 +129,13 @@
                 <h4 class="font-weight-bold">Buy</h4>
                 <a href="" class="text-decoration-none text-dark">Tagihan & Top Up</a>
                 <a href="" class="text-decoration-none text-dark">Tukar Tambah Handphone</a>
-                <a href="" class="text-decoration-none text-dark">Tokopedia COD</a>
+                <a href="" class="text-decoration-none text-dark">tokoNJedia COD</a>
             </div>
         </div>
         <div class="col-3">
             <div class="d-flex flex-column">
                 <h4 class="font-weight-bold">Help and Support</h4>
-                <a href="" class="text-decoration-none text-dark">Tokopedia Care</a>
+                <a href="" class="text-decoration-none text-dark">tokoNJedia Care</a>
                 <a href="" class="text-decoration-none text-dark">Syarat dan Ketentuan</a>
                 <a href="" class="text-decoration-none text-dark">Kebijakan Privasi</a>
             </div>

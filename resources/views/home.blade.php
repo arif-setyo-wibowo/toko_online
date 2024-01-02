@@ -269,8 +269,8 @@
                                     <div class="form-group w-100 mr-3 mb-0">
                                         <label for="" class="font-weight-bold">Nominal</label>
                                         <select name="" id="" class="form-control" disabled>
-                                            <option value="">asdfsadfsafdsdf</option>
-                                            <option value="">asdfsadfsafdsdf</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
                                         </select>
                                     </div>
                                 </div>
