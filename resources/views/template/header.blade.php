@@ -88,7 +88,7 @@
                     </div>
 
                     <span class="mr-3 line">|</span>
-                    <a href="{{ route('logout') }}" class="btn disable-hover text-white">LogOut</a>
+                    <a href="{{ route('logout') }}" class="btn disable-hover text-white">Logout</a>
                     @else
                     <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 mr-3">Masuk</a>
                     <a href="{{ route('register') }}" class="btn font-weight-bold text-white disable-hover">Daftar</a>
