@@ -15,8 +15,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- end  -->
-    <link rel="stylesheet" href="{{ asset('assets/') }}/css/style.css">
-    <title>Toko_Onlen</title>
+    <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/fontawesome/css/all.css">
+    <title>TokoPedia</title>
     <script src="https://kit.fontawesome.com/9bcecd6318.js" crossorigin="anonymous"></script>
 </head>
 
@@ -27,7 +28,7 @@
     <div class="header">
         <div class="item-header-1 d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <img class="mr-2" src="assets/img/1.png" alt="">
+                <img class="mr-2" src="{{ asset('assets') }}/img/1.png" alt="">
                 <span>Download Tokopedia App</span>
             </div>
 
@@ -42,28 +43,42 @@
 
         <div class="item-header-2 d-flex flex-column">
             <div class="d-flex justify-content-between align-items-center">
-                <img class="img-tokopedia" src="assets/img/2.png" alt="">
+                <img class="img-tokopedia" src="{{ asset('assets') }}/img/logo/2.png" alt="">
                 <span class="mx-2 text-kategory" onclick="kategoryOn()">Kategory</span>
                 <div class="wrap-search">
                     <input type="text" class="form-control" placeholder="Cari barang" data-toggle="modal"
                         data-target="#exampleModal">
                     <div class=" wrap-icon-search">
-                        <img class="img-search" src="assets/img/3.png" alt="">
+                        <img class="img-search" src="{{ asset('assets') }}/img/3.png" alt="">
                     </div>
                 </div>
 
-                <div class="wrap-img-shop mx-3" onclick="on()">
-                    <img class="img-shop" src="assets/img/4.png" alt="">
-                </div>
+              
 
-                <span class="mr-3 line">|</span>
+                
 
                 <div class="d-flex">
                     @if (Session::get('login'))
-                    <a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 btn-danger">Logout</a>
+                    <div class="wrap-img-shop mx-1" onclick="on()">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    
+                    <div class="wrap-img-shop mx-1" onclick="">
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </div>
+                    <div class="wrap-img-shop mx-1" onclick="">
+                        <img class="img-shop" src="{{ asset('assets') }}/img/logo/ic-toped.jpg" alt="">
+                    </div>
+
+                    <div class="wrap-img-shop mx-1" onclick="">
+                        <img class="img-shop" src="{{ asset('assets') }}/img/logo/user.png" alt="">
+                    </div>
+
+                    <span class="mr-3 line">|</span>
+                        <a href="{{ route('logout') }}" class="btn font-weight-bold mr-3 btn-danger">Logout</a>
                     @else
-                    <a href="{{ route('login') }}" class="btn font-weight-bold mr-3">Masuk</a>
-                    <a href="{{ route('register') }}" class="btn font-weight-bold text-white">Daftar</a>
+                        <a href="{{ route('login') }}" class="btn font-weight-bold ml-3 mr-3">Masuk</a>
+                        <a href="{{ route('register') }}" class="btn font-weight-bold text-white">Daftar</a>
                     @endif
                 </div>
             </div>
@@ -77,7 +92,7 @@
         </div>
 
         <div class="menu-bar flex-column justify-content-between align-items-center" id="menuBar">
-            <img src="assets/img/5.png" alt="">
+            <img src="{{ asset('assets') }}/img/5.png" alt="">
             <h4 class="mt-2">Wah keranjang belanjaanmu kosong</h4>
             <p class="text-center">Daripada dianggurin, mending diisi dengan barang barang </br>impianmu. Yuk cek
                 sekarang!</p>
@@ -112,7 +127,7 @@
             <div class="col-10">
                 <div class="head-left">
                     <div class="w-100 d-flex align-items-center">
-                        <img src="assets/img/6.png" alt="">
+                        <img src="{{ asset('assets') }}/img/6.png" alt="">
                         <span class="h4 m-0 p-0 font-weight-bold">Buku</span>
                     </div>
                     <div class="row mt-5">
@@ -310,7 +325,7 @@
                             <span>Flight</span>
                         </div>
                         <div class="item-menu d-flex px-2 align-items-center justify-content-center border-left">
-                            <img src="assets/img/10.png" alt="">
+                            <img src="{{ asset('assets') }}/img/10.png" alt="">
                         </div>
                     </div>
 
@@ -376,7 +391,7 @@
     <hr class="position-relative" style="top:170px">
 
     <div class="trending">
-        <h3>Lagi trending nih! <img src="assets/img/reload.png" alt=""> <span style="color: #03ac0e;">Muat
+        <h3>Lagi trending nih! <img src="{{ asset('assets') }}/img/reload.png" alt=""> <span style="color: #03ac0e;">Muat
                 Lainnya</span> </h3>
 
         <div class="row mt-4">
@@ -499,11 +514,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -521,11 +536,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -543,11 +558,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -565,11 +580,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -587,11 +602,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -609,11 +624,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -633,11 +648,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -655,11 +670,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -677,11 +692,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -699,11 +714,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -721,11 +736,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -743,11 +758,11 @@
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
                         <div class="d-flex align-items-center">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
-                            <img class="mr-1" width="10" height="10" src="assets/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
+                            <img class="mr-1" width="10" height="10" src="{{ asset('assets') }}/img/icon-bintang.png" alt="">
                             <span style="color: #989898;">(14)</span>
                         </div>
                     </div>
@@ -771,28 +786,28 @@
             <div class="row mx-0 p-2 border-bottom">
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
@@ -801,28 +816,28 @@
             <div class="row mx-0 p-2 border-bottom">
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
@@ -831,28 +846,28 @@
             <div class="row mx-0 p-2 border-bottom">
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
@@ -861,28 +876,28 @@
             <div class="row mx-0 p-2 border-bottom">
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
@@ -891,28 +906,28 @@
             <div class="row mx-0 p-2 border-bottom">
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
                 <div class="col-3 p-0">
                     <div class="d-flex align-items-center">
                         <div class="mr-4" style="width: 2px; height: 40px; background-color: #4950572e;"></div>
-                        <img class="mr-3" src="assets/img/6.png" alt="">
+                        <img class="mr-3" src="{{ asset('assets') }}/img/6.png" alt="">
                         <h4 class="font-weight-normal">Fashion Wanita</h4>
                     </div>
                 </div>
@@ -935,7 +950,7 @@
                         <a href="" style="color: #03ac0e;">Pelajari lebih lanjut</a>
                     </div>
                 </div>
-                <img src="assets/img/17.png" alt="">
+                <img src="{{ asset('assets') }}/img/17.png" alt="">
             </div>
 
 
@@ -953,7 +968,7 @@
         <div class="row mx-0 mt-5">
             <div class="col-4">
                 <div class="d-flex align-items-center">
-                    <img class="mr-3" src="assets/img/18.png" alt="">
+                    <img class="mr-3" src="{{ asset('assets') }}/img/18.png" alt="">
                     <div class="d-flex flex-column">
                         <span class="mb-3 font-weight-bold" style="color: #03ac0e;">Transparent</span>
                         <p>Pembayaran Anda baru saja diteruskan kepenjual setelah barang diterima</p>
@@ -962,7 +977,7 @@
             </div>
             <div class="col-4">
                 <div class="d-flex align-items-center">
-                    <img class="mr-3" src="assets/img/18.png" alt="">
+                    <img class="mr-3" src="{{ asset('assets') }}/img/18.png" alt="">
                     <div class="d-flex flex-column">
                         <span class="mb-3 font-weight-bold" style="color: #03ac0e;">Transparent</span>
                         <p>Pembayaran Anda baru saja diteruskan kepenjual setelah barang diterima</p>
@@ -971,7 +986,7 @@
             </div>
             <div class="col-4">
                 <div class="d-flex align-items-center">
-                    <img class="mr-3" src="assets/img/18.png" alt="">
+                    <img class="mr-3" src="{{ asset('assets') }}/img/18.png" alt="">
                     <div class="d-flex flex-column">
                         <span class="mb-3 font-weight-bold" style="color: #03ac0e;">Transparent</span>
                         <p>Pembayaran Anda baru saja diteruskan kepenjual setelah barang diterima</p>
@@ -1013,8 +1028,8 @@
                 <div class="d-flex flex-column align-items-center">
                     <img src="{{ asset('assets/') }}/img/footer/footer_img.png" width="400" alt="">
                     <div class="d-flex mt-3">
-                        <img width="150" class="mr-3" src="assets/img/22.png" alt="">
-                        <img width="150" src="assets/img/23.png" alt="">
+                        <img width="150" class="mr-3" src="{{ asset('assets') }}/img/22.png" alt="">
+                        <img width="150" src="{{ asset('assets') }}/img/23.png" alt="">
                     </div>
                     <span class="text-success">Blesing and Outcoming Challenges Through Courage, Hardwork, and Resistence</span>
                 </div>

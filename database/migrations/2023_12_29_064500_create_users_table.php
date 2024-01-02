@@ -18,11 +18,11 @@ return new class extends Migration
             $table->string('username', 255);
             $table->string('email', 255)->unique();
             $table->string('password', 255);
-            $table->string('phone', 255);
-            $table->date('dob');
-            $table->string('gender', 255);
-            $table->string('image', 255);
-            $table->string('google_id', 255);
+            $table->string('phone', 255)->nullable();
+            $table->date('dob')->nullable();
+            $table->string('gender', 255)->nullable();
+            $table->string('image', 255)->nullable();
+            $table->string('google_id', 255)->nullable();
             // $table->rememberToken();
             $table->timestamps();
             // $table->timestamp('email_verified_at')->nullable();
