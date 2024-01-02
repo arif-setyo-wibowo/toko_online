@@ -266,7 +266,7 @@
 												</p>
 												<div class="row">
 													<div class="col">
-														<button type="button" class="btn btn-link mb-4" id="btnUbahAlamat" data-id="{{$value['id']}}" data-nama="{{$value['nama_alamat']}}" data-pemilik="{{$value['pemilik_alamat']}}" data-alamat="{{$value['alamat']}}" style="text-decoration: none" color="#000"><span class="mx-5 fw-bold text-dark ">Ubah Alamat</span></button>
+														<button type="button" class="btn btn-link mb-4 btnUbahAlamat" data-id="{{$value['id']}}" data-nama="{{$value['nama_alamat']}}" data-pemilik="{{$value['pemilik_alamat']}}" data-alamat="{{$value['alamat']}}" style="text-decoration: none" color="#000"><span class="mx-5 fw-bold text-dark ">Ubah Alamat</span></button>
 													</div>
 												</div>
 											</div>
@@ -598,7 +598,7 @@ function handleFileChange(event) {
     }
 }
 
-$('#btnUbahAlamat').on('click', function() {
+$('.btnUbahAlamat').on('click', function() {
     // Mengambil nilai dari atribut data
     var id = $(this).data('id');
     var nama = $(this).data('nama');
