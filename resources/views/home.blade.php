@@ -409,8 +409,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -431,8 +430,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -453,8 +451,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -475,8 +472,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -497,8 +493,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -519,8 +514,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -543,8 +537,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -565,8 +558,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -587,8 +579,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -609,8 +600,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -631,8 +621,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -653,8 +642,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Kaos Cowo trending</h6>
                         <div class="d-flex">
-                            <span class="badge badge-pill"
-                                style="background-color: #ff00d13b; color: d50000;">47%</span>
+                            <span class="badge badge-pill" style="background-color: #ff00d13b; color: d50000;">47%</span>
                             <span class="badge-pill badge" style="color: #989898;"><del>Rp 75.000</del></span>
                         </div>
                         <h6 class="mt-1">Rp 40.000</h6>
@@ -836,5 +824,63 @@
             </div>
         </div>
     </div>
-@endsection
-    
+
+
+    <div class="kategory-foot2">
+        <div class="row mx-0">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <div>
+                    <h4 class="font-weight-bold" style="color: #ff8b00;">Punya Toko Online? Buka cabangnya di Tokopedia
+                    </h4>
+                    <h5 class="mt-5 font-weight-normal">Mudah, nyaman dan bebas komisi transaksi. <span class="font-weight-bold">GRATIS!</span> </h5>
+                    <div class="d-flex align-items-center">
+                        <button class="btn mr-4 text-white" style="background-color: #03ac0e;">Buka Toko GRATIS</button>
+                        <a href="" style="color: #03ac0e;">Pelajari lebih lanjut</a>
+                    </div>
+                </div>
+                <img src="{{ asset('assets') }}/img/17.png" alt="">
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <hr style="position: relative; top: 190px; border-top: 1px dashed black; margin: 10px 20px;">
+
+    <div class="kategory-foot3">
+
+        <a href="" style="color: #03ac0e;">Selengkapnya</a>
+
+        <div class="row mx-0 mt-5">
+            <div class="col-4">
+                <div class="d-flex align-items-center">
+                    <img class="mr-3" src="{{ asset('assets') }}/img/18.png" alt="">
+                    <div class="d-flex flex-column">
+                        <span class="mb-3 font-weight-bold" style="color: #03ac0e;">Transparent</span>
+                        <p>Pembayaran Anda baru saja diteruskan kepenjual setelah barang diterima</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex align-items-center">
+                    <img class="mr-3" src="{{ asset('assets') }}/img/18.png" alt="">
+                    <div class="d-flex flex-column">
+                        <span class="mb-3 font-weight-bold" style="color: #03ac0e;">Transparent</span>
+                        <p>Pembayaran Anda baru saja diteruskan kepenjual setelah barang diterima</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex align-items-center">
+                    <img class="mr-3" src="{{ asset('assets') }}/img/18.png" alt="">
+                    <div class="d-flex flex-column">
+                        <span class="mb-3 font-weight-bold" style="color: #03ac0e;">Transparent</span>
+                        <p>Pembayaran Anda baru saja diteruskan kepenjual setelah barang diterima</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @endsection

@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/styles/style.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/fontawesome/css/all.css">
+    <!-- Sandbox -->
+    <link rel="stylesheet" href="{{ asset('assets') }}/sandbox/css/plugins.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/sandbox/css/style.css">
     <title>TokoPedia</title>
     <script src="https://kit.fontawesome.com/9bcecd6318.js" crossorigin="anonymous"></script>
 </head>
@@ -112,63 +115,7 @@
     </div>
 
     
-    <div class="kategory-foot2">
-        <div class="row mx-0">
-            <div class="d-flex justify-content-between align-items-center w-100">
-                <div>
-                    <h4 class="font-weight-bold" style="color: #ff8b00;">Punya Toko Online? Buka cabangnya di Tokopedia
-                    </h4>
-                    <h5 class="mt-5 font-weight-normal">Mudah, nyaman dan bebas komisi transaksi. <span
-                            class="font-weight-bold">GRATIS!</span> </h5>
-                    <div class="d-flex align-items-center">
-                        <button class="btn mr-4 text-white" style="background-color: #03ac0e;">Buka Toko GRATIS</button>
-                        <a href="" style="color: #03ac0e;">Pelajari lebih lanjut</a>
-                    </div>
-                </div>
-                <img src="{{ asset('assets') }}/img/17.png" alt="">
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-    <hr style="position: relative; top: 190px; border-top: 1px dashed black; margin: 10px 20px;">
-
-    <div class="kategory-foot3">
-
-        <a href="" style="color: #03ac0e;">Selengkapnya</a>
-
-        <div class="row mx-0 mt-5">
-            <div class="col-4">
-                <div class="d-flex align-items-center">
-                    <img class="mr-3" src="{{ asset('assets') }}/img/18.png" alt="">
-                    <div class="d-flex flex-column">
-                        <span class="mb-3 font-weight-bold" style="color: #03ac0e;">Transparent</span>
-                        <p>Pembayaran Anda baru saja diteruskan kepenjual setelah barang diterima</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="d-flex align-items-center">
-                    <img class="mr-3" src="{{ asset('assets') }}/img/18.png" alt="">
-                    <div class="d-flex flex-column">
-                        <span class="mb-3 font-weight-bold" style="color: #03ac0e;">Transparent</span>
-                        <p>Pembayaran Anda baru saja diteruskan kepenjual setelah barang diterima</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="d-flex align-items-center">
-                    <img class="mr-3" src="{{ asset('assets') }}/img/18.png" alt="">
-                    <div class="d-flex flex-column">
-                        <span class="mb-3 font-weight-bold" style="color: #03ac0e;">Transparent</span>
-                        <p>Pembayaran Anda baru saja diteruskan kepenjual setelah barang diterima</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    @yield('content');
 
         <div class="row mx-0 mt-5" style="padding: 50px;">
             <div class="col-3">
