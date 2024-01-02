@@ -507,6 +507,7 @@ body {
     position: relative;
     padding: 8px 32px;
     top: 190px;
+
   }
   
   .kategory-foot img {
@@ -534,6 +535,20 @@ body {
     top: 190px;
   }
   
+.varian-active{
+  background-color: #D0FFE3;
+  border: 1px green solid;
+  color: #04BE2D;
+}
 
+.varian{
+  background-color: white;
+  border: 1px grey solid;
+  color: grey;
 
+}
 
+a:hover{
+  text-decoration: none;
+  color:;
+}

@@ -4796,19 +4796,19 @@ fieldset:disabled .btn {
   --bs-gradient: none;
 }
 .btn-outline-success {
-  --bs-btn-color: #45c4a0;
-  --bs-btn-border-color: #45c4a0;
-  --bs-btn-hover-color: #343f52;
-  --bs-btn-hover-bg: #45c4a0;
-  --bs-btn-hover-border-color: #45c4a0;
+  --bs-btn-color: #03ac0e;
+  --bs-btn-border-color: #03ac0e;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #03ac0e;
+  --bs-btn-hover-border-color: #03ac0e;
   --bs-btn-focus-shadow-rgb: 69, 196, 160;
-  --bs-btn-active-color: #343f52;
-  --bs-btn-active-bg: #45c4a0;
-  --bs-btn-active-border-color: #45c4a0;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: #03ac0e;
+  --bs-btn-active-border-color: #03ac0e;
   --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
-  --bs-btn-disabled-color: #45c4a0;
+  --bs-btn-disabled-color: #03ac0e;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #45c4a0;
+  --bs-btn-disabled-border-color: #03ac0e;
   --bs-gradient: none;
 }
 .btn-outline-info {
