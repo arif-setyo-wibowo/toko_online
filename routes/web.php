@@ -27,6 +27,12 @@ Route::get('/cart', function () {
 Route::get('/checkout', function () {
     return view('checkout');
 })->name('checkout');
+Route::get('/product', function () {
+    return view('shop_produk');
+})->name('product');
+Route::get('/shop', function () {
+    return view('shop_store');
+})->name('shop');
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.auth');
