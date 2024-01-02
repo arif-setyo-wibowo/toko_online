@@ -105,10 +105,23 @@
                     
                     <!-- review -->
                     <h5 class="fw-bolder">FOTO & VIDIO PEMBELI</h5>
-                        <div class="d-flex align-items-center mb-2 gap-2 ">
-                            <figure class=""><img style="max-width: 100px;" class="rounded" alt="" src="{{ asset('assets') }}/sandbox/img/avatars/u5.jpg" /></figure>
-                            <figure class=""><img style="max-width: 100px;" class="rounded" alt="" src="{{ asset('assets') }}/sandbox/img/avatars/u5.jpg" /></figure>
-                            <figure class=""><img style="max-width: 100px;" class="rounded" alt="" src="{{ asset('assets') }}/sandbox/img/avatars/u5.jpg" /></figure>
+                        <div class="d-flex align-items-center mb-2 gap-2 " data-per-view="4">
+                                <div class="swiper-slide"  style="max-width: 100px;">
+                                    <figure class="rounded"><img src="{{ asset('assets') }}/sandbox/img/photos/shs1.jpg" srcset="{{ asset('assets') }}/sandbox/img/photos/shs1@2x.jpg 2x" alt="" /><a class="item-link" href="{{ asset('assets') }}/sandbox/img/photos/shs1@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide"  style="max-width: 100px;">
+                                    <figure class="rounded"><img src="{{ asset('assets') }}/sandbox/img/photos/shs2.jpg" srcset="{{ asset('assets') }}/sandbox/img/photos/shs2@2x.jpg 2x" alt="" /><a class="item-link" href="{{ asset('assets') }}/sandbox/img/photos/shs2@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide"  style="max-width: 100px;">
+                                    <figure class="rounded"><img src="{{ asset('assets') }}/sandbox/img/photos/shs3.jpg" srcset="{{ asset('assets') }}/sandbox/img/photos/shs3@2x.jpg 2x" alt="" /><a class="item-link" href="{{ asset('assets') }}/sandbox/img/photos/shs3@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide"  style="max-width: 100px;">
+                                    <figure class="rounded"><img src="{{ asset('assets') }}/sandbox/img/photos/shs4.jpg" srcset="{{ asset('assets') }}/sandbox/img/photos/shs4@2x.jpg 2x" alt="" /><a class="item-link" href="{{ asset('assets') }}/sandbox/img/photos/shs4@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                                </div>
+                                <!--/.swiper-slide -->
                         </div>
                     <hr class="m-0 mb-1">
                     <h5>Review</h5>
@@ -123,7 +136,9 @@
                             </div>
                             <div class="mt-3 mt-md-0 ms-auto">
                                 <span>Barang Enak dan Berkualitas</span>
-                                <figure class=""><img style="max-width: 100px;" class="rounded" alt="" src="{{ asset('assets') }}/sandbox/img/avatars/u5.jpg" /></figure>
+                                    <div class="swiper-slide"  style="max-width: 100px;">
+                                        <figure class="rounded"><img src="{{ asset('assets') }}/sandbox/img/photos/shs3.jpg" srcset="{{ asset('assets') }}/sandbox/img/photos/shs3@2x.jpg 2x" alt="" /><a class="item-link" href="{{ asset('assets') }}/sandbox/img/photos/shs3@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                                    </div>
                             </div>
                             <hr class="my-2">
                         </div>
@@ -138,7 +153,9 @@
                             </div>
                             <div class="mt-3 mt-md-0 ms-auto">
                                 <span>Barang Enak dan Berkualitas</span>
-                                <figure class=""><img style="max-width: 100px;" class="rounded" alt="" src="{{ asset('assets') }}/sandbox/img/avatars/u5.jpg" /></figure>
+                                    <div class="swiper-slide"  style="max-width: 100px;">
+                                        <figure class="rounded"><img src="{{ asset('assets') }}/sandbox/img/photos/shs3.jpg" srcset="{{ asset('assets') }}/sandbox/img/photos/shs3@2x.jpg 2x" alt="" /><a class="item-link" href="{{ asset('assets') }}/sandbox/img/photos/shs3@2x.jpg" data-glightbox data-gallery="product-group"><i class="uil uil-focus-add"></i></a></figure>
+                                    </div>
                             </div>
                             <hr class="my-2">
                         </div>
